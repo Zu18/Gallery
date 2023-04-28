@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+  }
+ 
+ /* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
