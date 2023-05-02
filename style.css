@@ -24,28 +24,64 @@
 
   /* Add some padding inside the card container */
   .container {
-    padding: 2px 16px;
+    padding-bottom: 0px;
   }
 
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
+
+  .collapsible {
+    background-color: #777;
     color: white;
-    background-color: #000;
-    text-align: center;
     cursor: pointer;
+    padding: 18px;
     width: 100%;
-    font-size: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
 
-  .card button:hover {
+  .active,
+  .collapsible:hover {
     opacity: 0.7;
+  }
+
+  .collapsible:after {
+    /* Unicode character for "plus" sign (+) */
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+      /* Unicode character for "minus" sign (-) */
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
   }
 
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  body {
+    width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 20px 20px;
+  }
+  p, h4 {
+    padding-left: 16px;
   }
 
   /* Responsive layout - makes a one column layout instead of a two-column layout */

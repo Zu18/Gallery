@@ -13,48 +13,71 @@
     <h1>Tittle of the artical</h1>
 
     <div class="flex-container">
-    <section class="card">
-        <img src="images/generated-img.jpg" alt="" >
-        <div class="container">
-            <h4>Tittle</h4>
-            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.
-            </p>
-            <p><button>Description</button></p>
-        </div>
-    </section>
+        <section class="card">
+            <img src="images/generated-img.jpg" alt="">
+            <div class="container">
+                <h4>Tittle</h4>
+                <p>
+                    short info about project
+                </p>
+                <button class="collapsible">Description</button>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </section>
 
-    <section class="card">
-        <img src="images/generated-img.jpg" alt="">
-        <div class="container">
-            <h4>Tittle</h4>
-            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.
-            </p>
-            <p><button>Description</button></p>
-        </div>
-    </section>
+        <section class="card">
+            <img src="images/generated-img.jpg" alt="">
+            <div class="container">
+                <h4>Tittle</h4>
+                <p>
+                    short info about project
+                </p>
+                <button class="collapsible">Description</button>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </section>
 
-    <section class="card">
-        <h1>project 3</h1>
-    </section>
+        <section class="card">
+            <h1>project 3</h1>
+        </section>
 
-    <section class="card">
-        <h1>project 4</h1>
-    </section>
+        <section class="card">
+            <h1>project 4</h1>
+        </section>
 
-    <section class="card">
-        <h1>project 5</h1>
-    </section>
+        <section class="card">
+            <h1>project 5</h1>
+        </section>
 
-    <section class="card">
-        <h1>progect 6</h1>
-    </section>
-</div>
+        <section class="card">
+            <h1>progect 6</h1>
+        </section>
+    </div>
 
-    <script src="my-script.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 <footer>
