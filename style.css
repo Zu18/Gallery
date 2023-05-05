@@ -6,6 +6,8 @@
     justify-content: space-around;
     row-gap: 20px;
     flex-direction: row;
+    align-items: flex-start;
+    max-width: auto;
   }
 
   /* Add the flex items (the cards)*/
@@ -55,7 +57,7 @@
   }
 
   .active:after {
-      /* Unicode character for "minus" sign (-) */
+    /* Unicode character for "minus" sign (-) */
     content: "\2212";
   }
 
@@ -73,25 +75,28 @@
   }
 
   body {
-    width: 1200px;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px 20px 20px;
   }
-  p, h4 {
+
+  p,
+  h4 {
     padding-left: 16px;
   }
 
+  footer {
+    padding: 20px 0px 10px 0px;
+    background-color: orange;
+    text-align: center;
+  }
+
   /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 599px) {
     .flex-container {
       flex-direction: column;
-    }
-
-    img {
-      width: 400px;
     }
 
     .card {
