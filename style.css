@@ -37,7 +37,7 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .active,
@@ -65,6 +65,9 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.3;
   }
 
   img {
@@ -80,8 +83,15 @@
     padding: 0 20px 20px 20px;
   }
 
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h2 {font-size: 30px;}
+
   p,
-  h4 {
+  h2 {
     padding-left: 16px;
   }
 
