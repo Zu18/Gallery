@@ -17,3 +17,4 @@ HTML and CSS responsive image gallery with description part about the projects. 
 7. Fill the page with content and add images.
 Use Lorem Ipsum to describe the projects numbered 3-6. Selecting the desired images by using Lorem Picsum. 
 8. Correct the CSS file by removing temporary styles and adding final style touches.
+9. Publish the project https://zu18.github.io/Gallery/
